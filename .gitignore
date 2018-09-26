@@ -1,0 +1,6 @@
+*.gbc
+*.o
+*.sym
+*.map
+*.[12]bpp
+*.exe

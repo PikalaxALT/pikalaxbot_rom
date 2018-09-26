@@ -1,0 +1,1 @@
+GetNextByte EQU 0
