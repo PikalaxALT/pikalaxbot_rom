@@ -17,3 +17,8 @@ color    EQUS "+ PAL_COLOR_SIZE *"
 
 tiles EQUS "* LEN_2BPP_TILE"
 tile  EQUS "+ LEN_2BPP_TILE *"
+
+img_frame: MACRO
+	dba \1
+	db \2
+	ENDM

@@ -14,6 +14,7 @@ roms := pikalaxbot.gbc
 
 all_obj := \
 hram.o \
+gfx.o \
 main.o
 
 
