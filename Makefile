@@ -29,6 +29,9 @@ main.o
 all: rom
 rom: pikalaxbot.gbc
 
+really_clean: clean
+	rm -f gfx/*.2bpp
+
 clean:
 	rm -f $(roms) $(all_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym)
 	$(MAKE) clean -C tools/
