@@ -14,3 +14,10 @@ _rst00::
 	ld [hROMBank], a
 	ld [MBC5RomBank], a
 	ret
+
+SECTION "RST38", ROM0 [$38]
+_rst38::
+	di
+.forever
+	ld b, b ; breakpoint
+	jr .forever

@@ -1,13 +1,13 @@
 ; joypad buttons
 	const_def
-	const A_BUTTON_F ; 0
-	const B_BUTTON_F ; 1
-	const SELECT_F   ; 2
-	const START_F    ; 3
 	const D_RIGHT_F  ; 4
 	const D_LEFT_F   ; 5
 	const D_UP_F     ; 6
 	const D_DOWN_F   ; 7
+	const A_BUTTON_F ; 0
+	const B_BUTTON_F ; 1
+	const SELECT_F   ; 2
+	const START_F    ; 3
 
 NO_INPUT   EQU %00000000
 A_BUTTON   EQU 1 << A_BUTTON_F

@@ -8,6 +8,7 @@ RGBASM := rgbasm
 RGBFIX := rgbfix
 RGBGFX := rgbgfx
 RGBLINK := rgblink
+RGBASMFLAGS :=
 
 roms := pikalaxbot.gbc
 
@@ -61,7 +62,7 @@ endif
 
 pikalaxbot.gbc: $(all_obj)
 	$(RGBLINK) -w -n pikalaxbot.sym -m pikalaxbot.map -o $@ -p 0xFF $(all_obj)
-	$(RGBFIX) -v -i BYTE -m 0x19 -p 0xFF -t IMAGEROM $@
+	$(RGBFIX) -v -m 0x19 -p 0xFF -t IMAGEROM $@
 	tools/sort_symfile.sh pikalaxbot.sym
 
 ### Catch-all graphics rules

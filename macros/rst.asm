@@ -1,1 +1,2 @@
-GetNextByte EQU 0
+GetNextByte EQU $00
+Crash EQU $38
